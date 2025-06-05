@@ -19,7 +19,7 @@ parser.add_argument("--dry-run", action="store_true", help="Only scrape, do not 
 args = parser.parse_args()
 
 # === CONFIGURATION ===
-CHROMEDRIVER_PATH = os.path.join(os.getcwd(), "chromedriver.exe")
+CHROMEDRIVER_PATH = os.path.join(os.getcwd(), "chromedriver.exe") #Remove .exe if you are running on MAC/Linux
 RESUME_LINK = "https://yourdomain.com/resume.pdf"  # Replace with your actual resume URL
 
 MESSAGE_TEMPLATE = """Hi {name}, hope you’re well. If possible, could you kindly refer me for this role at {company}? {job_link}
